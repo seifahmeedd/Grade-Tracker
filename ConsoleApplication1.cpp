@@ -10,12 +10,13 @@ struct Student {
 	string name;
 	int grades[NUM_SUBJECTS];
 };
-// Function to add grades for a student
+// Function to add a student
 void add_name(Student& student) {
 	cout << "Enter a student name: ";
 	cin.ignore();
 	getline(cin, student.name);
 }
+// Function to add grade for a student
 void add_grades(Student& student) {
 	cout << "add student grades for " << student.name << " :  ";
 	for (int i = 0; i < NUM_SUBJECTS; i++) {
